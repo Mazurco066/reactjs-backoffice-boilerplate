@@ -1,16 +1,14 @@
 // Dependencies
+import { BrowserRouter as Router } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-
-// Components
-import { Button } from 'antd'
+import Routes from 'router'
 
 // Component
 export default function App() {
   return (
-    <div className="App">
-      <p>Teste</p>
-      <Button type="primary">Button</Button>
+    <Router>
+      <Routes />
       <ToastContainer position="bottom-right" />
-    </div>
+    </Router>
   )
 }
