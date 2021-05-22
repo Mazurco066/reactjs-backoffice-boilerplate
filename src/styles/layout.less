@@ -10,6 +10,18 @@
   transition: color 0.3s;
 }
 
+#backoffice-layout .trigger-mobile {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#backoffice-layout .trigger-mobile:hover {
+  color: @primary-color;
+}
+
 #backoffice-layout .trigger:hover {
   color: @primary-color;
 }
@@ -42,6 +54,11 @@
   border: 2px solid @primary-color;
 }
 
+#backoffice-layout .ant-drawer-body {
+  padding: 0;
+  background-color: #001529;
+}
+
 .site-layout .site-layout-background {
   background: #ffffff;
 }
@@ -49,6 +66,12 @@
 // For responsive layout
 @media (max-width: 540px) {
   .ant-layout-sider, #backoffice-layout .trigger {
+    display: none;
+  }
+}
+
+@media (min-width: 541px) {
+  .trigger-mobile, .ant-drawer {
     display: none;
   }
 }
