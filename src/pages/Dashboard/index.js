@@ -30,7 +30,7 @@ export default function Dashboard() {
   // JSX
   return (
     <>
-      <Row>
+      <Row gutter={[16, 16]}>
         <Col span={24}>
           <h3>Dashboard page</h3>
         </Col>

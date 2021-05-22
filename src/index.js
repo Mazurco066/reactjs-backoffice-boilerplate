@@ -6,7 +6,6 @@ import { App } from 'pages'
 
 // Global Styles
 import 'styles/main.less'
-import 'react-toastify/dist/ReactToastify.css'
 
 // DOM Component
 ReactDOM.render(

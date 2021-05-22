@@ -2,7 +2,9 @@
 import {
   UserOutlined,
   VideoCameraOutlined,
-  UploadOutlined
+  UploadOutlined,
+  DashOutlined,
+  FormOutlined
 } from '@ant-design/icons'
 
 /**
@@ -16,17 +18,17 @@ import {
 // Sidebar items
 export const SidebarItems = [
   {
-    text: 'Nav 01',
+    text: 'Dashboard',
     key: "1",
-    path: "/users",
-    icon: <UserOutlined />,
+    path: "/",
+    icon: <DashOutlined />,
     children: []
   },
   {
-    text: 'Nav 02',
+    text: 'Forms',
     key: "2",
-    path: "/videos",
-    icon: <VideoCameraOutlined />,
+    path: "/forms",
+    icon: <FormOutlined />,
     children: []
   },
   {
