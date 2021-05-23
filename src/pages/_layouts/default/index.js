@@ -75,7 +75,7 @@ export default function DefaultLayout({ children }) {
         onClose={() => setDrawerOpenState(false)}
         visible={isDrawerOpen}
         getContainer={false}
-        style={{ position: 'absolute' }}
+        style={{ position: 'fixed' }}
       >
         { renderMenu() }
       </Drawer>
