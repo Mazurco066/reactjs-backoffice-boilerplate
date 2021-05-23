@@ -29,6 +29,7 @@ export default function DefaultLayout({ children }) {
             {
               children.map(({ text: subTitle, icon: subIcon, key: subKey, path: subPath }) => (
                 <Item
+                className={router.location.pathname === subPath ? 'ant-menu-item-selected' : 'not-selected'}
                   onClick={() => router.push(subPath)}
                   key={subKey}
                   icon={subIcon ? subIcon : null}
@@ -42,6 +43,7 @@ export default function DefaultLayout({ children }) {
           <Item
             key={key}
             icon={icon ? icon : null}
+            className={router.location.pathname === path ? 'ant-menu-item-selected' : 'not-selected'}
             onClick={() => router.push(path)}
           >
             {text}
@@ -87,6 +89,9 @@ export default function DefaultLayout({ children }) {
             className: 'trigger-mobile',
             onClick: toggleDrawer,
           })}
+          <h3 className="app-title">
+            Backoffice Boilerplate
+          </h3>
         </Header>
         <Content
           className="site-layout-background main-content"

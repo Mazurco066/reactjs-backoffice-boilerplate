@@ -32,32 +32,25 @@ export const SidebarItems = [
     children: []
   },
   {
-    text: 'Nav 03',
-    key: "3",
-    path: "/uploads",
-    icon: <UploadOutlined />,
-    children: []
-  },
-  {
-    text: 'Nav 04',
+    text: 'Submenus',
     key: "sub1",
     icon: <UploadOutlined />,
     children: [
       {
         text: "Sub 01",
-        key: "4",
+        key: "3",
         path: "/subpath1",
         icon: <UserOutlined />
       },
       {
         text: "Sub 02",
-        key: "5",
+        key: "4",
         path: "/subpath2",
         icon: <VideoCameraOutlined />
       },
       {
         text: "Sub 03",
-        key: "6",
+        key: "5",
         path: "/subpath3",
         icon: null
       }
